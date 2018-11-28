@@ -2,17 +2,27 @@
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kanvas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_939748_nrwwg7qkpgm.css">
 </head>
 <body>
     <canvas id="canvas"></canvas>
-    <div id=action class="action">
-        <button id=eraser>橡皮擦</button>
-        <button id="brush">画笔</button>
-    </div>
+    <ul class="colorsel">
+        <li id=red class="red"></li>
+        <li id=yellow class="yellow"></li>
+        <li id=green class="green"></li>
+    </ul>
+    <ul class="btn clearfix">
+        <li id=brush class="iconfont icon-brush active"></li>
+        <li id=eraser class="iconfont icon-eraser"></li>
+        <li id=reset class="iconfont icon-delete"></li>
+        <li id=download class="iconfont icon-download"></li>
+    </ul>
+    
    </body>
+   <footer>made by Kinboy</footer>
 <script src="./index.js"></script>
 </html>

@@ -1,20 +1,67 @@
 #canvas{
-  background-color: lightblue;
-}
-body{
-  margin:0;
-}
-.action{
+    display:block;
+    background-color: white;
     position:fixed;
     left:0;
     top:0;
 }
-.action > #brush{
-    display:none;
+div,body{margin:0;padding:0}
+body{
+  overflow: hidden;
 }
-.action.x>#brush{
-    display:inline-block;
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
 }
-.action.x>#eraser{
-    display:none;
+.colorsel{
+    position:fixed;
+    top:50px;
+    left:-30px;
+}
+.colorsel> li{
+    width:25px;
+    height:25px;
+    box-shadow:0 0 3px rgba(0,0,0,0.25);
+    text-decoration: none;
+    list-style: none;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+.colorsel>li.red{
+    background-color: red;
+}
+.colorsel>li.yellow{
+    background-color: yellow;
+}
+.colorsel>li.green{
+    background-color: green;
+}
+.colorsel>li.active{
+    box-shadow: 0 0 6px rgba(0,0,0,0.95);
+    transform:scale(1.1);
+    transition:all 0.3s;
+}
+.btn{
+    position:fixed;
+    top:0px;
+    left:0px;
+    padding-left:10px;
+}
+.iconfont{
+    list-style:none;
+    float:left;
+    font-size:28px !important;
+    margin-right:18px;
+}
+.iconfont.active{
+    color:red;
+    transform:scale(1.2);
+    transition:all 0.3s;
+}
+footer{
+    position:fixed;
+    bottom:0;
+    left:0;
+    font-size:10px;
 }
